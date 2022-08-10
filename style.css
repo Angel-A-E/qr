@@ -1,0 +1,164 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: hsl(30, 38%, 92%);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items:center ;
+	justify-content: center;
+}
+
+
+
+main{
+	width: 100%;
+}
+
+.container{
+	min-width: 600px;
+	width: 30%;
+	margin: 0 auto;
+	display: flex;
+	background: white;
+	margin-bottom: 30px;
+}
+
+.contenido1{
+	width: 50%;
+	background-image: url(images/image-product-desktop.jpg);
+	background-position: center;
+	background-size: cover;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.contenido2{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+	padding: 35px 40px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.parrafo-title{
+	font-size: 16px;
+	color: hsl(228, 12%, 48%);
+	font-weight:500 ;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 38px;
+	color: hsl(212, 21%, 14%);
+}
+
+.parrafo-descriptivo{
+	width: 85%;
+	line-height:1.4 ;
+	color: hsl(228, 12%, 48%);
+	font-size: 14px;
+}
+
+.precios{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.parrafo-updated{
+	font-size: 35px;
+	color: hsl(158, 36%, 37%) ;
+}
+
+.parrafo-previous{
+	font-size: 14px;
+	color:hsl(228, 12%, 48%) ;
+	text-decoration: line-through;
+}
+
+button{
+	width: 100%;
+	padding: 17px 0;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-weight: 600;
+	border-radius: 7px;
+	background-color:hsl(158, 36%, 37%) ;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: hsl(228, 12%, 48%);
+}
+
+button img{
+	margin-right: 7px;
+}
+
+@media only screen and(min-width: 641px) and(max-width: 768px){
+	.container{
+		max-width: 600px;
+	}
+}@media(max-width: 640px){
+	.container{
+		min-width: auto;
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px;
+	}
+
+	.contenido1{
+		width: 100%;
+		height: 350px;
+		background-image: url(images/image-product-mobile.jpg);
+		border-radius: 10px 10px 0 0;
+	}
+
+	.contenido2{
+		width: 100%;
+		row-gap: 12px;
+		padding: 25px;
+		border-radius: 0 0 10px 10px;
+	}
+
+	.parrafo-title{
+		font-size: 14px;
+	}
+
+	h1{
+		font-size: 32px;
+		line-height: 1;
+	}
+
+	.parrafo-descriptivo{
+		width: 95%;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		line-height: 1.7;
+		font-size: 12px;
+	}
+
+
+	button{
+		margin: 10px;
+	}
+
+}
+
+.attribution{
+	display: none;
+}
