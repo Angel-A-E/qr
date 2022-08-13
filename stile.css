@@ -16,17 +16,22 @@ body{
 	padding: 3px;
 }
 
-.container{
+main{
 	margin: auto;
 	min-height: 95%;
 	background-color: white;
-	width: 300px;
+	width: 250px;
 	border-radius: 20px;
 	box-shadow: 1px 1px hsl(218, 48%, 22%);
+
+}
+
+.container{
+	width:100%;
 }
 
 .imagen{
-	max-width: 300px;
+	max-width: 250px;
 	height: auto;
 	display: block;
 	border-radius: 30px;
@@ -43,6 +48,10 @@ p{
 @media (max-width: 370px){
 	.container{
 		padding: 0.4em;
+	}
+
+	.imagen{
+		
 	}
 
 }
